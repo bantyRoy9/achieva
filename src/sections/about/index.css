@@ -1,0 +1,73 @@
+
+  /* Variables for colors */
+  :root {
+    --achieva-blue: #1c2760;
+    --text-color: #333;
+    --background-grey: #FEFEFE; /* Light grey for the background */
+  }
+  
+  /* Main Container Styles */
+  .aboutContainer {
+    padding: 40px 80px; /* Adjust padding as needed */
+    background-color: var(--background-grey);
+    position: relative; /* For the background gears */
+    overflow: hidden; /* To keep gears within bounds */
+  }
+  
+  /* Title Styling */
+  .mainTitle {
+    color: var(--achieva-blue);
+    font-size: 2.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contentWrapper {
+    display: flex;
+    align-items:center; 
+    gap: 60px;
+
+  }
+  
+  /* Text Block Styling (Left Column) */
+  .textBlock {
+    flex: 3; /* Takes up more space, e.g., 60% */
+    color: var(--text-color);
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+  
+  .textBlock p:not(:last-child) {
+      margin-bottom: 20px;
+  }
+  
+  /* Image Block Styling (Right Column) */
+  .imageBlock {
+    flex: 2; /* Takes up less space, e.g., 40% */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .salesforceImage {
+    max-width: 100%;
+    height: auto;
+  }
+  .badge{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .backgroundGear1 {
+    position: absolute;
+    left: -20px;
+    bottom: -20px;
+    width: 200px;
+    height: 200px;
+    background: url('./../../public/assets/about/gear.svg') no-repeat center center / contain; 
+    /* opacity: 0.15; */
+    transform: rotate(15deg);
+  }

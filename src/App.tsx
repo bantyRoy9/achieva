@@ -1,7 +1,8 @@
 import BannerSection from './components/banner';
 import './App.css';
 import Header from './components/Header';
-import AboutSection from './sections/about';
+import AboutSection from './sections/about/about';
+import SaleforceAccelerator from './sections/Accelerators';
 
 function App() {
   return (
@@ -9,6 +10,8 @@ function App() {
       <Header/>
       <BannerSection />
       <AboutSection/>
+      <SaleforceAccelerator/>
+
     </div>
   );
 }
