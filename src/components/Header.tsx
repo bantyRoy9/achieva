@@ -1,37 +1,22 @@
 import React, { useState } from "react";
-import "./../global.css";
-import logo from "./../assets/logo.svg";
-import down from "./../assets/down.svg";
-import searchlogo from "./../assets/svg/search.svg";
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
+  const navLinks = ["About Achieva","Platform","Services","Accelerators and Solutions","Industry Expertise","Customer Stories","Contact Us"];
   return (
     <header className="header">
-      <div className="logo">
-        <img src={logo} alt="Achieva Logo" />
+      <div className="logo"><img src={'assets/svg/logo.svg'} alt="Achieva Logo" /></div>
+      <div className="nav-container">
+        <nav className={`nav ${menuOpen ? "open" : ""}`}>
+          {navLinks.map((link, index) => (
+            <a key={index} href={`#`} className="text">
+              {link} {(link !== "About Achieva" && link !== "Contact Us" && link !== "Customer Stories") && <span><img src={'assets/svg/down.svg'} alt="Dropdown Icon" /></span>}
+            </a>
+          ))}
+        </nav>
+        <img className="search-icon" src={'assets/svg/search.svg'} alt="Search" />
+        {/* CTA Button */}
+        <button className="cta-button">LET’S TALK <img src={'/assets/svg/right.svg'}/></button>
       </div>
-      <nav className={`nav ${menuOpen ? "open" : ""}`}>
-        <a href="#">About Achieva</a>
-        <a href="#">
-          Platform <span><img src={down}/></span>
-        </a>
-        <a href="#">
-          Services <span><img src={down}/></span>
-        </a>
-        <a href="#">
-          Accelerators and Solutions <span><img src={down}/></span>
-        </a>
-        <a href="#">
-          Industry Expertise <span><img src={down}/></span>
-        </a>
-        <a href="#">Customer Stories</a>
-        <a href="#">Contact Us</a>
-      </nav>
-      <img className="search-icon" src={searchlogo} alt="Search" />  
-      {/* CTA Button */}
-      <button className="cta-button">LET’S TALK</button>
-
       {/* Hamburger for mobile */}
       <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>

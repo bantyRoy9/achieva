@@ -1,0 +1,85 @@
+.saleforece-section{
+  background-color: rgba(219, 229, 255, 0.4);
+}
+.saleforece-section .section-header{
+  padding: 100px 0 30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 35px;
+}
+.saleforece-section .section-header p{
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+}
+
+
+.loan-card {
+  background: #ffffff;
+  border-radius: 4px;
+  padding: 20px;
+  max-width: 400px;
+  min-width: 300px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: relative;
+}
+.loan-logo{
+  padding: 20px 0;
+}
+
+
+.loan-description {
+  font-size: 16px;
+  color:rgba(0, 0, 0, 1);
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.loan-link {
+  position: absolute;
+  bottom: 20px;
+  color: rgba(0, 160, 227, 1);
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.loan-link:hover {
+  text-decoration: underline;
+}
+.gradient-background {
+  min-height: 18vh;
+  padding: 20px;
+  background: #ccdde8;
+background: linear-gradient(95deg,rgba(204, 221, 232, 1) 0%, rgba(255, 255, 255, 1) 25%, rgba(245, 245, 247, 1) 99%);
+}

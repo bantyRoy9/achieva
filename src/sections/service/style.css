@@ -1,0 +1,136 @@
+.services-container{
+    /* background: linear-gradient(135deg, #f0f4f8, #e6ecf2, #fff); */
+  
+}
+.services-section {
+    display: flex;
+    /* border-radius: 12px; */
+    overflow: hidden;
+    max-width: 70%;
+    margin: 40px auto;
+    /* border: 1px solid red; */
+  }
+  
+  .services-left-panel {
+    flex: 1;
+    background:var(--bg-secondary);
+    color: #fff;
+    padding: 4rem;
+    min-width: 50%;
+  }
+  
+  .panel-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .panel-header h2 {
+    line-height: 56px;
+    letter-spacing: -3%;
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--text-white);
+  }
+  
+  
+  .panel-content p {
+    font-size: 22px;
+    line-height: 32px;
+    color: var(--text-white);
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .right-panel {
+    flex: 1.5;
+    padding: .5rem 0 0 2.5rem;
+    /* background-color: #fff; */
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 992px) {
+    .services-section {
+      flex-direction: column;
+      margin: 20px;
+    }
+  
+    .left-panel,
+    .right-panel {
+      padding: 2rem;
+    }
+  }
+
+
+  .service-item {
+    border-bottom: 1px solid #a2a2a2;
+    padding: 1.5rem 0;
+    transition: all 0.3s ease;
+  }
+  
+  .item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .item-title-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .item-icon {
+    margin-right: 15px;
+  }
+  .item-header h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+  }
+  
+  .expand-icon {
+    font-size: 1.5rem;
+    color: #1a237e;
+    transition: transform 0.3s ease;
+  }
+  
+  .expanded .expand-icon {
+    transform: rotate(180deg);
+  }
+  
+  .item-content {
+    padding-top: 1rem;
+    max-height: 200px;
+    opacity: 1;
+    transition: max-height 0.5s ease-in, opacity 0.5s ease-in;
+  }
+  
+  .service-item:not(.expanded) .item-content {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+  
+  .item-content p {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0 0 1rem 40px;
+  }
+  
+  .read-more {
+    display: inline-block;
+    color: #007bff;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-left: 40px;
+  }

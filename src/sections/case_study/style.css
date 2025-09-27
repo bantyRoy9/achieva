@@ -1,0 +1,219 @@
+.case-study-slider-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 70px 40px;
+    font-family: Arial, sans-serif;
+    overflow: hidden; 
+    position: relative;
+  }
+  
+  
+  .slider-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+
+  }
+  
+  .slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  
+  .case-study-card {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+    transform: scale(0.8) translateY(0px);
+    filter: blur(8px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Active Card Styles */
+  .case-study-card.active-card {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1) translateY(0px);
+    filter: blur(0px);
+    z-index: 10;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Stronger shadow for active */
+  }
+  
+  /* Previous Card (to the left, blurred) */
+  .case-study-card.prev-card {
+    opacity: 0.7;
+    transform: scale(0.9) translateX(-30%) translateY(0px); /* Move left, slightly smaller */
+    filter: blur(5px);
+    z-index: 5;
+  }
+  
+  /* Next Card (to the right, blurred) */
+  .case-study-card.next-card {
+    opacity: 0.7;
+    transform: scale(0.9) translateX(30%) translateY(0px); /* Move right, slightly smaller */
+    filter: blur(5px);
+    z-index: 5;
+  }
+  
+  .pagination-dotss {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    position: relative; /* Ensure dots are above other elements */
+    z-index: 15;
+  }
+  
+  .pagination-dotss .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #c5d0db; /* A light gray for inactive dots */
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pagination-dotss .dot.active {
+    background-color: #1a237e; /* The deep blue for the active dot */
+  }
+  
+  
+  @media (max-width: 992px) {
+    .case-study-card {
+      width: 90%; /* Take more width on smaller screens */
+      max-width: none;
+    }
+    .case-study-card.prev-card,
+    .case-study-card.next-card {
+      transform: scale(0.8) translateX(0) translateY(0); /* Adjust blurring to stack */
+      opacity: 0; /* Hide them if they would overlap too much */
+      filter: blur(0); /* Remove blur if hidden */
+    }
+    .slider-wrapper {
+      min-height: auto;
+    }
+  }
+
+  .case-study-card {
+    display: flex;
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    max-width: 90%;
+    width: 90%; 
+    box-sizing: border-box;
+    height: auto; 
+  }
+  
+  .content-side {
+    flex: 2;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .content-side h3 {
+    font-weight: 600;
+    color: #2A2A2A;
+    margin-bottom: 2rem;
+    font-size: 24px;
+    line-height: 34px
+  }
+  
+  .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem; /* Adjust gap for stats */
+    margin-bottom: 2.5rem;
+  }
+  
+  .stat-item h4 {
+    font-size: 22px; /* Smaller than previous example to fit */
+    font-weight: 700;
+    color: #654DED;
+    margin: 0;
+    line-height: 39px;
+  }
+  
+  .stat-item p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.3;
+  }
+  
+  .learn-more-btn {
+    background-color: var(--accent-blue); /* A bright blue for the button */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+  }
+  
+  .learn-more-btn .learn-more-arrow {
+    margin-left: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .image-side {
+    flex:1.5;
+    min-height: 100%;
+    display: flex;
+  }
+  
+  .image-side img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 992px) {
+    .case-study-card {
+      flex-direction: column;
+      width: 95%; /* Adjust width for smaller screens */
+      max-width: 500px; /* Max width on smaller screens */
+    }
+    .content-side {
+      padding: 2rem;
+    }
+    .image-side {
+      height: 250px; /* Fixed height for image on mobile */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .stats-grid {
+      grid-template-columns: 1fr;
+    }
+    .content-side h3 {
+      font-size: 1.25rem;
+    }
+    .stat-item h4 {
+      font-size: 1.8rem;
+    }
+    .learn-more-btn {
+      width: 100%;
+      justify-content: center;
+    }
+  }

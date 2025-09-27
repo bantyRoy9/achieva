@@ -1,0 +1,77 @@
+.differentiators {
+    position: relative;
+    background: url("/assets/why_demco/bg.png") no-repeat right center;
+    background-size: auto 100%;
+    padding: 80px 20px;
+    margin-top: 100px;
+  }
+  
+  .content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+  
+  .text-column h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #0b2c5f;
+    margin-bottom: 30px;
+    line-height: 1.3;
+  }
+  
+  .text-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .text-column li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+    color: #444;
+    line-height: 1.6;
+  }
+  
+  .check-icon {
+    width: 20px;
+    height: 20px;
+    color: #0ea5e9; /* sky blue */
+    flex-shrink: 0;
+    margin-top: 4px;
+  }
+  
+  .image-column {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-column img {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* Responsive */
+  @media (max-width: 991px) {
+    .content-wrapper {
+      grid-template-columns: 1fr;
+      text-align: left;
+    }
+  
+    .differentiators {
+      background-position: right top;
+      background-size: 250px auto; /* scales down bg */
+    }
+  
+    .image-column {
+      margin-top: 30px;
+    }
+  }
+  
