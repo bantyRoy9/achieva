@@ -19,15 +19,53 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 80%;
-    margin: 70px 10% 40px auto;
+    margin: 4.375rem 10% 2.5rem auto;
+    gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .contentWrapper {
+        grid-template-columns: 1fr; 
+        max-width: 90%;
+        margin: 4rem 5% 2rem auto;
+        gap: 2rem;
+    }
+    .imageBlock {
+      order: 1;
   }
+
+  .textBlock {
+      order: 2;
+  }
+}
+
+@media (max-width: 768px) {
+    .contentWrapper {
+        grid-template-columns: 1fr;
+        max-width: 95%;
+        margin: 3rem 2.5% 1.5rem auto;
+        gap: 1.5rem; 
+    }
+    .imageBlock {
+      order: 1;
+  }
+
+  .textBlock {
+      order: 2;
+  }
+}
   
   .textBlock {
     color: var(--text-color);
     font-size: 20px;
     margin-left: 10%;
+    max-height: 450px;
+    overflow-y: auto;
   }
-  
+  .textBlock::-webkit-scrollbar {
+    width: 8px;
+    display: none;
+  }
   .textBlock p:not(:last-child) {
       margin-bottom: 20px;
   }
@@ -35,11 +73,24 @@
     max-width: 100%;
     height: auto;
   }
-  .badge{
+  .badge {
     display: flex;
     justify-content: center;
-    gap: 40px;
-  }
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+@media (max-width: 1024px) {
+    .badge {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .badge {
+        gap: 1.5rem;
+    }
+}
+
   .backgroundGear1 {
     position: absolute;
     left: 0;

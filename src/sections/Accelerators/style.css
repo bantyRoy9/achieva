@@ -22,14 +22,12 @@
   margin: auto;
 }
 
-/* Tablets */
 @media (max-width: 1024px) {
   .card-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* Mobile */
 @media (max-width: 600px) {
   .card-grid {
     grid-template-columns: 1fr;
@@ -43,7 +41,7 @@
   border-radius: 4px;
   padding: 20px;
   max-width: 400px;
-  min-width: 300px;
+  min-width: 100px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;

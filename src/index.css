@@ -9,8 +9,8 @@
   --font-caveat: 'Caveat', Caveat;
   /* Color Palette */
   --bg-primary: #FFFEFA;
-  --bg-secondary: #101E49;
-
+  --bg-secondary: #0F1E48;
+ 
   /* text */
   --text-white: #ffffff;
   --text-color: #2A2A2A;
@@ -29,25 +29,6 @@ body {
   font-family: var(--font-main);
 }
 
-.cta-button {
-  background: var(--accent-blue);
-  color: var(--text-white);
-  padding: 16px 36px;
-  border-radius: 12px;
-  font-family: var(--font-alt);
-  font-weight: 700;
-  font-size: 14px;
-  text-transform: uppercase;
-  border: none;
-  cursor: pointer;
-  transition: background 0.3s;
-  display: flex;
-  gap: 16px;
-}
-
-.cta-button:hover {
-  background: #008bc7;
-}
 
 .text {
   font-family: var(--font-main);

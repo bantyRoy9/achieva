@@ -15,7 +15,7 @@
 .industry-header p {
   font-size: 22px;
   color: #fff;
-  /* max-width: 500px; */
+
   margin: 0 auto;
 }
 
@@ -28,7 +28,6 @@
   margin: 0 auto;
 }
 
-/* Tablets */
 @media (max-width: 1024px) {
   .category-grid {
     grid-template-columns: repeat(2, 1fr);
