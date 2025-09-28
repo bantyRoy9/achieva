@@ -1,6 +1,6 @@
-import React, { type FC } from 'react';
-import './style.css';
+import { type FC } from 'react';
 import PaginationDot from './PaginationDot';
+import './style.css';
 
 
 const TestimonialSection: FC = () => {

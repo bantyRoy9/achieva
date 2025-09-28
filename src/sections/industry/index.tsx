@@ -1,4 +1,4 @@
-import React, { type FC } from "react";
+import { type FC } from "react";
 import "./style.css";
 const Industry: FC = () => {
   const categories = ["Financial Services", "Manufacturer", "HiTech", "Insurance", "Real Estate", "Retail", "Healthcare", "Nonprofit",];

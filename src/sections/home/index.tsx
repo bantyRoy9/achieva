@@ -1,5 +1,5 @@
 import type { FC } from "react";
-import React, { useState } from "react";
+import { useState } from "react";
 import './style.css';
 const Home: FC = () => {
     const [menuOpen, setMenuOpen] = useState<boolean>(false);
