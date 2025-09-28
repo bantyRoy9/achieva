@@ -43,8 +43,11 @@
     color: #fff;
     margin: 0;
     margin-bottom: 10px;
+    white-space: nowrap;
   }
-  
+  .column-group.gold h4{
+    color: #FFBF36;
+  }
   .column-group ul {
     list-style: none;
     padding: 0;
@@ -52,7 +55,7 @@
   }
   
   .column-group ul li a {
-    color: #c5d0db;
+    color: #fff;
     text-decoration: none;
     font-size: 0.9rem;
     line-height: 1.8;
@@ -71,13 +74,15 @@
   
   .social-media {
     display: flex;
-    flex-direction: column;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 24px;
   }
   
   .social-icons {
     display: flex;
     gap: 15px;
-    margin-top: 10px;
   }
   
   .social-icons a {
@@ -91,7 +96,7 @@
   }
   
   .footer-bottom {
-    background-color: #000;
+    background-color: var(--text-white);
     padding: 20px 80px;
     display: flex;
     justify-content: space-between;

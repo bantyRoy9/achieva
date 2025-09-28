@@ -1,6 +1,8 @@
 .partner-badge-section{
-    padding: 50px 0;
+    padding: 20px 0;
     text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 .partner-badge-section img{
     width: 100%;

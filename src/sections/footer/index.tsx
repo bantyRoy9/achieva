@@ -117,7 +117,7 @@ const Footer: React.FC = () => {
                 <ul>
                   {col.links.map((link, linkIndex) => (
                     <li key={linkIndex}>
-                      <a href="#">{link}</a>
+                      <a href="#">- {link}</a>
                     </li>
                   ))}
                 </ul>
@@ -133,7 +133,7 @@ const Footer: React.FC = () => {
                 <ul>
                   {col.links.map((link, linkIndex) => (
                     <li key={linkIndex}>
-                      <a href="#">{link}</a>
+                      <a href="#">- {link}</a>
                     </li>
                   ))}
                 </ul>
@@ -149,7 +149,7 @@ const Footer: React.FC = () => {
                 <ul>
                   {col.links.map((link, linkIndex) => (
                     <li key={linkIndex}>
-                      <a href="#">{link}</a>
+                      <a href="#">- {link}</a>
                     </li>
                   ))}
                 </ul>
@@ -159,34 +159,33 @@ const Footer: React.FC = () => {
 
           {/* Contact and Social Column */}
           <div className="column contact-column">
-            <div className="column-group">
+            <div className="column-group gold">
               <h4>Free Salesforce Audit</h4>
-              <p>Collaborate With Us</p>
+              <h4>Collaborate With Us</h4>
             </div>
             <div className="column-group">
               <h4>Blog</h4>
-              <p>Resources</p>
+              <h4>Resources</h4>
             </div>
             <div className="column-group">
               <h4>Contact Us</h4>
-              <p>
+              <h4>
                 801 Morgan Lane, Suite # 205, <br /> Plainsboro NJ 08536, USA
-              </p>
-              <p>+1 609 632 0350</p>
-              <p>info@achieva.com</p>
+              </h4>
+              <h4>+1 609 632 0350</h4>
+              <h4>info@achieva.com</h4>
             </div>
             <div className="social-media">
               <h4>Connect with us</h4>
               <div className="social-icons">
-                <a href="#"><i className="fab fa-facebook-f"></i></a>
-                <a href="#"><i className="fab fa-instagram"></i></a>
-                <a href="#"><i className="fab fa-linkedin-in"></i></a>
-                <a href="#"><i className="fab fa-twitter"></i></a>
+                <a href="#"><img src='assets/svg/facebook.svg' alt='facebook'/></a>
+                <a href="#"><img src='assets/svg/tweeter.svg' alt='tweeter'/></a>
+                <a href="#"><img src='assets/svg/insta.svg' alt='insta'/></a>
               </div>
             </div>
             <div className="column-group">
               <h4>Terms of Use</h4>
-              <p>Privacy Policy</p>
+              <h4>Privacy Policy</h4>
             </div>
           </div>
         </div>
@@ -194,7 +193,8 @@ const Footer: React.FC = () => {
       <div className="footer-bottom">
         <div className="logo-container">
           {/* Add your logo image here */}
-          <img src="/path/to/achieva-logo.svg" alt="Achieva Logo" />
+      <div className="logo"><img src={'assets/svg/logo1.svg'} alt="Achieva Logo" /></div>
+
         </div>
         <p className="copyright">Copyright © 2025 Achieva.</p>
       </div>
