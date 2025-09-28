@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { type FC } from 'react';
 import './style.css';
 import PaginationDot from './PaginationDot';
 
 
-const TestimonialSection = () => {
+const TestimonialSection: FC = () => {
   return (
     <section className="testimonial-section">
       <div className='decor top-decor'>
-      <img src="assets/testimonial/top.svg" alt="Background Decoration" className="background-decor" />
+        <img src="assets/testimonial/top.svg" alt="Background Decoration" className="background-decor" />
       </div>
       <div className="inner-container">
         <div className="left-side">

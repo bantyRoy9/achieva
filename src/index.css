@@ -8,49 +8,15 @@
   --font-alt: 'Inter', sans-serif;
   --font-caveat: 'Caveat', Caveat;
   /* Color Palette */
-  --bg-primary:#FFFEFA;
+  --bg-primary: #FFFEFA;
   --bg-secondary: #101E49;
-  
+
   /* text */
   --text-white: #ffffff;
-  --text-color:#2A2A2A;
-  --primary-dark: #2d3748;
+  --text-color: #2A2A2A;
   --primary-blue: #032D60;
-  --light-blue: #ebf8ff;
 
   --accent-blue: #00A0E3;
-  --accent-yellow: #ffbf36;
-  --accent-light: #4299e1;
-
-  --gray-light: #f7fafc;
-  --gray-medium: #e2e8f0;
-  --gray-dark: #4a5568;
-  --text-dark: #2d3748;
-  --text-medium: #4a5568;
-  --text-light: #718096;
-  --success: #38a169;
-  --warning: #ed8936;
-  
-  /* Gradients */
-  --gradient-primary: linear-gradient(135deg, #1a365d 0%, #3182ce 100%);
-  --gradient-blue: linear-gradient(135deg, #3182ce 0%, #4299e1 100%);
-  --gradient-light: linear-gradient(135deg, #ebf8ff 0%, #ffffff 100%);
-  
-  --font-weight-normal: 400;
-  --font-weight-medium: 500;
-  --font-weight-semibold: 600;
-  --font-weight-bold: 700;
-  
-  /* Spacing */
-  --section-padding: 5rem 1rem;
-  --container-max-width: 1200px;
-  --content-max-width: 800px;
-  --element-spacing: 2rem;
-  --button-padding: 0.75rem 2rem;
-  
-  /* Border Radius */
-  --border-radius: 8px;
-  --border-radius-lg: 12px;
 }
 
 * {
@@ -61,8 +27,6 @@
 
 body {
   font-family: var(--font-main);
-  /* color: var(--text-dark); */
-  /* line-height: 1.6; */
 }
 
 .cta-button {
@@ -85,13 +49,13 @@ body {
   background: #008bc7;
 }
 
-.text{
+.text {
   font-family: var(--font-main);
-font-weight: 500;
-font-style: Medium;
-font-size: 16px;
-line-height: 100%;
-letter-spacing: 0%;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
 
 }
 
@@ -117,5 +81,6 @@ letter-spacing: 0%;
 }
 
 .dot.active {
-  background-color: #00bfff; /* Bright blue for the active dot */
+  background-color: #00bfff;
+  /* Bright blue for the active dot */
 }

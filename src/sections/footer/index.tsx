@@ -1,10 +1,5 @@
 import React from 'react';
 import './style.css';
-
-// Define a type for a list of links
-
-
-// Define a type for the column data
 type FooterColumn = {
   category: string;
   links: string[];
@@ -109,7 +104,6 @@ const Footer: React.FC = () => {
     <footer className="footer">
       <div className="footer-main">
         <div className="footer-columns">
-          {/* Consulting and Development Column */}
           <div className="column">
             {consultingLinks.map((col, index) => (
               <div key={index} className="column-group">
@@ -125,7 +119,6 @@ const Footer: React.FC = () => {
             ))}
           </div>
 
-          {/* Integration, Managed Services, and Migration Column */}
           <div className="column">
             {integrationLinks.map((col, index) => (
               <div key={index} className="column-group">
@@ -141,7 +134,6 @@ const Footer: React.FC = () => {
             ))}
           </div>
 
-          {/* Salesforce AI, Accelerators, and Industry Solutions Column */}
           <div className="column">
             {otherLinks.map((col, index) => (
               <div key={index} className="column-group">
@@ -157,7 +149,6 @@ const Footer: React.FC = () => {
             ))}
           </div>
 
-          {/* Contact and Social Column */}
           <div className="column contact-column">
             <div className="column-group gold">
               <h4>Free Salesforce Audit</h4>
@@ -178,9 +169,9 @@ const Footer: React.FC = () => {
             <div className="social-media">
               <h4>Connect with us</h4>
               <div className="social-icons">
-                <a href="#"><img src='assets/svg/facebook.svg' alt='facebook'/></a>
-                <a href="#"><img src='assets/svg/tweeter.svg' alt='tweeter'/></a>
-                <a href="#"><img src='assets/svg/insta.svg' alt='insta'/></a>
+                <a href="#"><img src='assets/svg/facebook.svg' alt='facebook' /></a>
+                <a href="#"><img src='assets/svg/tweeter.svg' alt='tweeter' /></a>
+                <a href="#"><img src='assets/svg/insta.svg' alt='insta' /></a>
               </div>
             </div>
             <div className="column-group">
@@ -192,8 +183,7 @@ const Footer: React.FC = () => {
       </div>
       <div className="footer-bottom">
         <div className="logo-container">
-          {/* Add your logo image here */}
-      <div className="logo"><img src={'assets/svg/logo1.svg'} alt="Achieva Logo" /></div>
+          <div className="logo"><img src={'assets/svg/logo1.svg'} alt="Achieva Logo" /></div>
 
         </div>
         <p className="copyright">Copyright © 2025 Achieva.</p>

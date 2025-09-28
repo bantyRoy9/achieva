@@ -1,5 +1,6 @@
+import type { FC } from "react";
 import "./style.css";
-const WhyDemco = () => {
+const WhyDemco:FC = () => {
   const points = [
     "Salesforce Gold/Crest Partner providing reliable Salesforce solutions with a highly efficient team of certified Salesforce Developers, Product Consultants, Administrators, and Architects that has delivered over 75 projects.",
     "Great experience in Salesforce implementations across multiple industry verticals like Financial Services, Education, Healthcare Services, Engineering & Real Estate, Manufacturing, Retail, Logistics, and Non-Profit.",
@@ -14,11 +15,8 @@ const WhyDemco = () => {
   return (
     <section className="differentiators">
       <div className="content-wrapper">
-        {/* Left Column - Text */}
         <div className="text-column">
-          <h2>
-            What Makes Us Different from Other Salesforce Partners?
-          </h2>
+          <h2>What Makes Us Different from Other Salesforce Partners?</h2>
           <ul>
             {points.map((point, i) => (
               <li key={i}>
@@ -28,11 +26,6 @@ const WhyDemco = () => {
             ))}
           </ul>
         </div>
-
-        {/* Right Column - Image */}
-        {/* <div className="image-column"> */}
-          {/* <img src="/assets/why_demco/bg.png" alt="Why Damco" /> */}
-        {/* </div> */}
       </div>
     </section>
   );

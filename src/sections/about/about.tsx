@@ -23,18 +23,18 @@ const AboutSection: React.FC = () => {
 
     return (
         <div className={'aboutContainer'}>
-            <h1 className="mainTitle" dangerouslySetInnerHTML={{ __html: content.title }}/>
+            <h1 className="mainTitle" dangerouslySetInnerHTML={{ __html: content.title }} />
             <div className={'contentWrapper'}>
                 <div className={'textBlock'}>
-                    <p className={'paragraph'} dangerouslySetInnerHTML={{ __html: content.paragraph1 }}/>
-                    <p className={'paragraph'} dangerouslySetInnerHTML={{ __html: content.paragraph2 }}/>
+                    <p className={'paragraph'} dangerouslySetInnerHTML={{ __html: content.paragraph1 }} />
+                    <p className={'paragraph'} dangerouslySetInnerHTML={{ __html: content.paragraph2 }} />
                 </div>
                 <div className={'imageBlock'}>
                     <img src={content.image} alt={""} className={'salesforceImage'} />
                 </div>
             </div>
             <div className='badge'>
-                {Array(4).fill(null).map((_, index) => <img key={`about-${index}`} src={`/assets/about/image${index + 1}.png`} alt={`Salesforce Badge ${index + 1}`} className='badgeImage'/>)}
+                {Array(4).fill(null).map((_, index) => <img key={`about-${index}`} src={`/assets/about/image${index + 1}.png`} alt={`Salesforce Badge ${index + 1}`} className='badgeImage' />)}
             </div>
             <div className='backgroundGear1'></div>
         </div>

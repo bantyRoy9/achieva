@@ -7,8 +7,8 @@ interface BlogPost {
   summary: string;
   image: string;
   background: string;
-  colorH:string;
-  color:string;
+  colorH: string;
+  color: string;
 }
 
 const blogPosts: BlogPost[] = [
@@ -18,8 +18,8 @@ const blogPosts: BlogPost[] = [
     summary: 'In the modern-day world, where digitalization is soaring high, businesses are constantly...',
     image: 'assets/blog/image1.png',
     background: 'rgba(186, 219, 247, 1)',
-    colorH:'rgba(3, 45, 96, 1)',
-    color:'rgba(0, 0, 0, 1)'
+    colorH: 'rgba(3, 45, 96, 1)',
+    color: 'rgba(0, 0, 0, 1)'
   },
   {
     id: 2,
@@ -27,9 +27,9 @@ const blogPosts: BlogPost[] = [
     summary: 'In the modern-day world, where digitalization is soaring high, businesses are constantly...',
     image: 'assets/blog/image2.png',
     background: 'rgba(219, 229, 255, 1)',
-    colorH:'rgba(3, 45, 96, 1)',
-    color:'rgba(0, 0, 0, 1)'
-    
+    colorH: 'rgba(3, 45, 96, 1)',
+    color: 'rgba(0, 0, 0, 1)'
+
   },
   {
     id: 3,
@@ -37,8 +37,8 @@ const blogPosts: BlogPost[] = [
     summary: 'In the modern-day world, where digitalization is soaring high, businesses are constantly...',
     image: 'assets/blog/image3.png',
     background: 'rgba(215, 243, 228, 1)',
-    colorH:'rgba(3, 45, 96, 1)',
-    color:'rgba(0, 0, 0, 1)'
+    colorH: 'rgba(3, 45, 96, 1)',
+    color: 'rgba(0, 0, 0, 1)'
   },
 ];
 
@@ -50,16 +50,16 @@ const BlogSection: React.FC = () => {
         <a href="#" className="read-all-link">Read All ›</a>
       </div>
       <div className="blog-grid">
-        {blogPosts.map(({ title,background, summary, image,color,colorH }) => (
-          <div style={{background}} className={`blog-card`} key={title}>
-          <div className="card-image-container">
-            <img src={image} alt={title} className="card-image" />
+        {blogPosts.map(({ title, background, summary, image, color, colorH }) => (
+          <div style={{ background }} className={`blog-card`} key={title}>
+            <div className="card-image-container">
+              <img src={image} alt={title} className="card-image" />
+            </div>
+            <div className="card-content">
+              <h3 style={{ color: colorH }}>{title}</h3>
+              <p style={{ color }}>{summary}</p>
+            </div>
           </div>
-          <div className="card-content">
-            <h3 style={{color:colorH}}>{title}</h3>
-            <p style={{color}}>{summary}</p>
-          </div>
-        </div>
         ))}
       </div>
     </section>

@@ -1,0 +1,13 @@
+import Home from './home/index';
+import AboutSection from './about/about';
+import SaleforceAccelerator from './accelerators';
+import WhyDemco from './why_demco';
+import CaseStudySection from './case_study';
+import ServicesSection from './service';
+import TestimonialSection from './testimonial';
+import BlogSection from './blog';
+import ContactFormSection from './contact';
+import Footer from './footer';
+import Industry from './industry';
+import PartnerBadge from './partnerBadge';
+export {Home,AboutSection,ServicesSection,CaseStudySection,TestimonialSection,SaleforceAccelerator,Industry,WhyDemco,BlogSection,PartnerBadge,ContactFormSection,Footer};

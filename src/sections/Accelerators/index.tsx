@@ -17,28 +17,24 @@ const cards = [
 const SaleforceAccelerator: React.FC = () => {
   return (<><div className='saleforece-section'>
     <div className='section-header'>
-    <h1 className={'mainTitle'}>Salesforce Accelerators & Solutions</h1>    
-    <p>Amplifying Business Performance through Salesforce Accelerators</p>
+      <h1 className={'mainTitle'}>Salesforce Accelerators & Solutions</h1>
+      <p>Amplifying Business Performance through Salesforce Accelerators</p>
     </div>
     <div className="card-grid">
       {cards.map(({ description, link = "#" }, idx) => (
         <div className="loan-card">
-        <div className="loan-logo">
-          <img src={`assets/accelerators/image${idx + 1}.png`} alt="Logo" className="loan-logo-img" />
+          <div className="loan-logo">
+            <img src={`assets/accelerators/image${idx + 1}.png`} alt="Logo" className="loan-logo-img" />
+          </div>
+          <p className="loan-description">{description}</p>
+          <a href={link} className="loan-link">
+            Read More <img src='assets/testimonial/right.svg' />
+          </a>
         </div>
-  
-        {/* Description */}
-        <p className="loan-description">{description}</p>
-  
-        {/* Read More */}
-        <a href={link} className="loan-link">
-          Read More <img src='assets/testimonial/right.svg'/>
-        </a>
-      </div>
       ))}
     </div>
   </div>
-  <div className="gradient-background"></div></>
+    <div className="gradient-background"></div></>
   );
 };
 
