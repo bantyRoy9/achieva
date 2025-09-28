@@ -41,7 +41,7 @@ const Home: FC = () => {
                     </p>
                     <div className="hero-buttons">
                         <button className="get-started-btn">GET STARTED TODAY!</button>
-                        <button className="book-a-demo-btn">BOOK A DEMO ›</button>
+                        <button className="book-a-demo-btn">BOOK A DEMO <img src="assets/svg/right1.svg"/></button>
                     </div>
                 </div>
 
